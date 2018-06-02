@@ -122,6 +122,7 @@ def capitalize_it(string)
   newStringArray.each do |a|
     a.capitalize!
   end
+  newStringArray.join(' ')
 end
   
 end
