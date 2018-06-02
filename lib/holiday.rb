@@ -104,7 +104,7 @@ def all_supplies_in_holidays(holiday_hash)
       tempPuts = "  #{capitalize_it(holiday)}: " 
       supplies.each do |supply|
         if supplies.last == supply 
-          tempPuts = tempPuts + capitalize_it(supply)
+          tempPuts = tempPuts + supply
         else
           tempPuts = tempPuts + capitalize_it(supply) + ", "
         end
