@@ -127,11 +127,16 @@ Spring:
 end
 
 def capitalize_it(string)
-  newStringArray = string.to_s.split
+  newString = string.to_s
+  if newString.count('_') > 0
+    newStringArray = string.to_s.split('_')
+  else 
+    newStringArray = string.to_s.split
+  end
   newStringArray.each do |a|
     a.capitalize!
   end
-  newStringArray.join(' ')
+  newString = newStringArray.join(' ')
 end
   
 end
