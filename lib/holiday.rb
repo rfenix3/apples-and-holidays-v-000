@@ -65,7 +65,16 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash[season][holiday_name] = supply_array
+
+  holiday_hash.each do |seasons, holiday_names|
+    if seasons == season
+      holiday_hash[:season][:holiday_name] = supply_array
+      
+    end
+  
+  # Using Enumerator method, see below  
+  # holiday_hash[season][holiday_name] = supply_array
+
   holiday_hash
 end
 
