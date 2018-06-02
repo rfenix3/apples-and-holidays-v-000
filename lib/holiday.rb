@@ -85,10 +85,8 @@ def all_winter_holiday_supplies(holiday_hash)
   supplies = []
   holiday_hash[:winter].each do |holiday, supply|
     supplies.push(supply)
-    #binding.pry
   end
   supplies.flatten
-  binding.pry
 end
 
 def all_supplies_in_holidays(holiday_hash)
