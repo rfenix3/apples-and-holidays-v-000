@@ -112,18 +112,6 @@ def all_supplies_in_holidays(holiday_hash)
       puts "#{tempPuts}"
     end
   end
-  
-Winter:
-  Christmas: Lights, Wreath
-  New Years: Party Hats
-Summer:
-  Fourth Of July: Fireworks, BBQ
-Fall:
-  Thanksgiving: Turkey
-Spring:
-  Memorial Day: BBQ
-  
-
 end
 
 def capitalize_it(string)
