@@ -106,7 +106,7 @@ def all_supplies_in_holidays(holiday_hash)
         if supplies.last == supply 
           tempPuts = tempPuts + supply
         else
-          tempPuts = tempPuts + capitalize_it(supply) + ", "
+          tempPuts = tempPuts + supply + ", "
         end
       end
       puts "#{tempPuts}"
