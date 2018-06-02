@@ -118,7 +118,11 @@ Spring:
 end
 
 def capitalize_it(string)
-  newString = string.split(' ')
+  newStringArray = string.split
+  newStringArray.each do |a|
+    a.capitalize!
+  end
+end
   
 end
 
