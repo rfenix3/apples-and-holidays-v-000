@@ -99,10 +99,19 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   
   holiday_hash.each do |season, holidays|
-    puts capitalize_it(season)
+    puts "#{capitalize_it(season)}:"
     holidays.each do |holiday, supplies|
-      puts "#{capitalize_it(holiday)}: 
+      tempPuts = "#{capitalize_it(holiday)}: " 
+      supplies.each do |supply|
+        if supply.last 
+          tempPuts = tempPuts + capitalize_it(supply)
+        else
+          tempPuts = tempPuts + capitalize_it(supply) + ", "
+        end
+      end
+      puts "#{tempPuts}"
     end
+  end
   
 Winter:
   Christmas: Lights, Wreath
